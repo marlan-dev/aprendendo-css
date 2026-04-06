@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Bandeira Hover</title>
+  <style>
+    .flag {
+      width: 300px;
+      height: 200px;
+      display: flex;
+      cursor: pointer;
+      transition: all 0.5s ease;
+    }
+
+    .stripe {
+      flex: 1;
+      transition: background-color 0.5s ease;
+    }
+
+    .stripe:nth-child(1) {
+        background-color: black;
+    }
+
+    .stripe:nth-child(2){
+        background-color: yellow;
+    }
+
+    .stripe:nth-child(3) {
+        background-color: red;
+    }
+     
+    .flag:hover .stripe:nth-child(1) {
+        background-color: green;
+    }
+
+    .flag:hover .stripe:nth-child(2) {
+        background-color: white;
+    }
+
+    .flag:hover .stripe:nth-child(3) {
+        background-color: orange;
+    }
+   </style>
+  </head>
+  <body>
+    <div class="flag">
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+    </div>
+  </body>
+   
